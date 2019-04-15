@@ -1,0 +1,28 @@
+body {
+  z-index: 0;
+}
+.navbar-lewagon {
+  justify-content: space-between;
+  background: #252627;
+  z-index: 1;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #73F9D9;
+}
+
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-lewagon .navbar-brand img {
+  width: 40px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #73F9D9;
+  letter-spacing: 0.4em;
+  font-weight: 200;
+  margin-right: 3vw;
+  margin-top: 2vh;
+}
+
+

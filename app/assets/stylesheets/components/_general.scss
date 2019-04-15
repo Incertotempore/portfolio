@@ -2,12 +2,48 @@
   height: 100vh;
   width: 100vw;
   background-color: #252627;
+  position: relative;
 }
 
-.title {
-  color: #DDDDDD;
+.container {
+  position: absolute;
+  margin-top: 17vh;
+  margin-left: 17vw;
+  width: 50vw;
 }
 
-.subtitle {
+.title h1 {
   color: #DDDDDD;
+  font-size: 5rem;
+}
+
+
+
+.subtitle h3 {
+  color: #DDDDDD;
+  font-weight: 150;
+  padding-top: 3vh;
+  font-size: 1.75rem;
+  word-spacing: 0.85em;
+  margin-bottom: 10vh;
+}
+
+.btn-home {
+  color: #73F9D9;
+  background-color: transparent;
+  border-color: #73F9D9;
+  border: 2px solid #73F9D9;
+  padding: 1rem 2em 1em;
+  width: 10vw;
+  border-radius: 2px;
+  letter-spacing: 0.4em;
+  font-weight: 200;
+  transition-duration: 0.3s;
+}
+
+.btn-home:hover {
+  color: #252627;
+  background-color: #73F9D9;
+  border-color: #73F9D9;
+  text-decoration: none;
 }

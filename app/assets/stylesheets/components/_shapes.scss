@@ -1,78 +1,83 @@
 .shapes_container {
   height: 100vh;
-  width: 180vw;
+  width: 100vw;
   position: relative;
 }
 
 #parallelogram-1 {
-  width: 180px;
-  height: 150px;
+  width: 150px;
+  height: 200px;
   transform: rotate(-30deg);
   background: #D6465D;
   position: absolute;
   bottom: -20px;
-  left: 20vw;
-  animation: mymove 3s ease-in;
+  left: 15vw;
+  animation: mymove 3s ease;
+  box-shadow: -16px 16px #96F6DA;
 }
 
 #parallelogram-2 {
-  width: 180px;
-  height: 300px;
+  width: 150px;
+  height: 350px;
   transform: rotate(-30deg);
   background: #D6465D;
   position: absolute;
   bottom: -20px;
-  left: 40vw;
-  animation: mymove 2.8s ease-in;
+  left: 30vw;
+  animation: mymove 2.8s ease;
+  box-shadow: -16px 16px #96F6DA;
 }
 
 #parallelogram-3 {
-  width: 180px;
-  height: 450px;
+  width: 150px;
+  height: 500px;
+  transform: rotate(-30deg);
+  background: #D6465D;
+  position: absolute;
+  bottom: -20px;
+  left: 45vw;
+  animation: mymove 2.6s ease;
+  box-shadow: -16px 16px #96F6DA;
+}
+
+#parallelogram-4 {
+  width: 150px;
+  height: 650px;
   transform: rotate(-30deg);
   background: #D6465D;
   position: absolute;
   bottom: -20px;
   left: 60vw;
-  animation: mymove 2.6s ease-in;
-}
-
-#parallelogram-4 {
-  width: 180px;
-  height: 600px;
-  transform: rotate(-30deg);
-  background: #D6465D;
-  position: absolute;
-  bottom: -20px;
-  left: 80vw;
-  animation: mymove 2.2s ease-in;
+  animation: mymove 2.2s ease;
+  box-shadow: -16px 16px #96F6DA;
 }
 
 #parallelogram-5 {
-  width: 180px;
-  height: 750px;
+  width: 150px;
+  height: 800px;
   transform: rotate(-30deg);
   background: #D6465D;
   position: absolute;
   bottom: -20px;
-  left: 100vw;
-  animation: mymove 2s ease-in;
+  left: 75vw;
+  animation: mymove 2s ease;
+  box-shadow: -16px 16px #96F6DA;
 }
 
 @keyframes mymove {
   0% {
-    transform: translateY(0px);
-    transform: translateX(0px);
+    box-shadow: 0 0 #96F6DA, 0 0 #96F6DA, 0 0 #96F6DA, 0 0 #96F6DA;
+    transform: translateY(0px) translateX(0px);
   }
 
   50% {
-    transform: translateY(-150px);
-    transform: translateX(-100px);
+    text-shadow: 0 0 #96F6DA, 0 0 #96F6DA, 0 0 #96F6DA, 0 0 #96F6DA;
+    transform: translateY(-150px) translateX(-100px) rotate(-30deg);
   }
 
   100% {
-    transform: translateY(-0px);
-    transform: translateX(0px);
+    text-shadow: -4 4 #96F6DA, -8 8 #96F6DA, -12 12 #96F6DA, -16 16 #96F6DA;
+    transform: translateY(-0px) translateX(0px) rotate(-30deg);
   }
 }
 

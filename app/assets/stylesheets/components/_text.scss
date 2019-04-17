@@ -1,10 +1,26 @@
 #name {
   color: #D6465D;
-  text-shadow: -3px 3px #96F6DA;
+  text-shadow: -4px 4px #96F6DA;
   margin-left: 2vw;
   font-weight: 600;
+  animation: text-shadow-pop-bl 0.9s ease;
 }
 
 .second-line {
   display: flex;
+}
+
+.text-shadow-pop-bl {
+  animation: text-shadow-pop-bl 0.6s both;
+}
+
+@keyframes text-shadow-pop-bl {
+  0% {
+    text-shadow: 0 0 #96F6DA, 0 0 #96F6DA, 0 0 #96F6DA, 0 0 #96F6DA;
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    text-shadow: -1px 1px #96F6DA, -2px 2px #96F6DA, -3px 3px #96F6DA, -4px 4px #96F6DA;
+    transform: translateX(8px) translateY(-8px);
+  }
 }

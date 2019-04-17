@@ -12,7 +12,7 @@
   position: absolute;
   bottom: -20px;
   left: 20vw;
-  animation: mymove 5s ease-in infinite;
+  animation: mymove 3s ease-in;
 }
 
 #parallelogram-2 {
@@ -23,6 +23,7 @@
   position: absolute;
   bottom: -20px;
   left: 40vw;
+  animation: mymove 2.8s ease-in;
 }
 
 #parallelogram-3 {
@@ -33,6 +34,7 @@
   position: absolute;
   bottom: -20px;
   left: 60vw;
+  animation: mymove 2.6s ease-in;
 }
 
 #parallelogram-4 {
@@ -43,6 +45,7 @@
   position: absolute;
   bottom: -20px;
   left: 80vw;
+  animation: mymove 2.2s ease-in;
 }
 
 #parallelogram-5 {
@@ -53,19 +56,23 @@
   position: absolute;
   bottom: -20px;
   left: 100vw;
+  animation: mymove 2s ease-in;
 }
 
 @keyframes mymove {
   0% {
     transform: translateY(0px);
+    transform: translateX(0px);
   }
 
   50% {
-    transform: translateY(-155px);
+    transform: translateY(-150px);
+    transform: translateX(-100px);
   }
 
   100% {
-    transform: translateY(0px);
+    transform: translateY(-0px);
+    transform: translateX(0px);
   }
 }
 

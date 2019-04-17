@@ -1,0 +1,94 @@
+.shapes_container {
+  height: 100vh;
+  width: 180vw;
+  position: relative;
+}
+
+#parallelogram-1 {
+  width: 180px;
+  height: 150px;
+  transform: rotate(-30deg);
+  background: #D6465D;
+  position: absolute;
+  bottom: -20px;
+  left: 20vw;
+  animation: mymove 5s ease-in infinite;
+}
+
+#parallelogram-2 {
+  width: 180px;
+  height: 300px;
+  transform: rotate(-30deg);
+  background: #D6465D;
+  position: absolute;
+  bottom: -20px;
+  left: 40vw;
+}
+
+#parallelogram-3 {
+  width: 180px;
+  height: 450px;
+  transform: rotate(-30deg);
+  background: #D6465D;
+  position: absolute;
+  bottom: -20px;
+  left: 60vw;
+}
+
+#parallelogram-4 {
+  width: 180px;
+  height: 600px;
+  transform: rotate(-30deg);
+  background: #D6465D;
+  position: absolute;
+  bottom: -20px;
+  left: 80vw;
+}
+
+#parallelogram-5 {
+  width: 180px;
+  height: 750px;
+  transform: rotate(-30deg);
+  background: #D6465D;
+  position: absolute;
+  bottom: -20px;
+  left: 100vw;
+}
+
+@keyframes mymove {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-155px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

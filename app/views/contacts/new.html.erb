@@ -1,0 +1,28 @@
+<div class="background-1">
+
+  <div class="contact-title">
+    <h1 id="stranger">Don’t be a stranger,</h1>
+    <h1 id="subtext">just say hello.</h1>
+    <div class="message">
+      <p>Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
+    </div>
+  </div>
+  <div class="form_contact">
+    <div align="center">
+      <h3>Send me a message :)</h3>
+
+      <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
+        <%= f.input :name, :required => true %>
+        <%= f.input :email, :required => true %>
+        <%= f.input :message, :as => :text, :required => true %>
+        <div class= "hidden">
+          <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+        </div>
+        <div>
+          </br>
+          <%= f.button :submit, 'Send message', :class=> "btn btn-primary" %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

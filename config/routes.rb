@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   get 'about', to: 'pages#about', as: :about
-  get 'contact', to: 'pages#contact', as: :contact
   get 'my_works', to: 'pages#my_works', as: :my_works
+
+  resources "contacts", only: [:new, :create]
+  get 'contacts', to: 'contacts#new', as: :contact
 
   root to: 'pages#home'
   # get 'pages/contact'
